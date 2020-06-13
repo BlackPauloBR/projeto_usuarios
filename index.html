@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Projeto Usuários</title>
+  </head>
+  <body>
+    <h1>Pesquisa de Usuários</h1>
+    <form class="form">
+      <div class="inputs">
+        <input id="inText" type="text" value="carregando dados..." disabled />
+        <button id="inButton" type="button" disabled>ENVIAR</button>
+      </div>
+    </form>
+    <div class="divGeral">
+      <div id="divUsuarios">
+        <h3 id="usuarioEncontrado">Nenhum usuário filtrado</h3>
+        <div class="tab">
+          <ul id="ul"></ul>
+        </div>
+      </div>
+      <div id="divStats">
+        <h3 id="statsEncontrado">Nada a ser exibido</h3>
+        <ul id="ulStats">
+          <li id="liMasc" class="liStats"></li>
+          <li id="liFem" class="liStats"></li>
+          <li id="liSoma" class="liStats"></li>
+          <li id="liMedia" class="liStats"></li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/input.js"></script>
+    <script src="./js/render.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
